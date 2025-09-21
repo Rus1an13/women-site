@@ -7,6 +7,6 @@ urlpatterns = [
     path('', include('women.urls')),
 ]
 
-handler404 = views.page_not_found
+# handler404 = views.page_not_found
 
-handler500 = views.server_error
+# handler500 = views.server_error

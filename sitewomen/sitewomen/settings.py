@@ -11,9 +11,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-z4yq+neo_c&y$zh8v!zuxfjb0xa37nomaco^smrcu@ot0_1w_='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -43,7 +43,9 @@ ROOT_URLCONF = 'sitewomen.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR / 'templates/',
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
