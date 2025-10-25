@@ -2,7 +2,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 
-import settings
+from sitewomen import settings
 from women import views
 
 urlpatterns = [
